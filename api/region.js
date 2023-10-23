@@ -11,6 +11,7 @@ if (page==="region") {
         throw new Error('Network response was not ok');
       }
       console.log("na")
+      console.log("na")
       return response.json();
     })
     .then(data => {
