@@ -14,7 +14,8 @@ if (page==="region") {
       return response.json();
     })
     .then(data => {
-      show.textContent=data;
+      const json=JSON.stringify(data,null,2);
+      show.textContent=json;
       console.log(data);
     })
     .catch(error => {
