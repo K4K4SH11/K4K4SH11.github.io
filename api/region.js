@@ -1,5 +1,6 @@
 console.log("yeye")
 const curr=window.location.href;
+const show=document.getElementById("ye")
 const page=curr.split("?")[1]
 console.log("yee")
 if (page==="region") {
@@ -12,6 +13,7 @@ if (page==="region") {
       return response.json();
     })
     .then(data => {
+      show.textContent=data;
       console.log(data);
     })
     .catch(error => {
