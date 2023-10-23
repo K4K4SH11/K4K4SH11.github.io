@@ -1,6 +1,9 @@
+console.log("yeye")
 const curr=window.location.href;
 const page=curr.split("?")[1]
+console.log("yee")
 if (page==="region") {
+  console.log("ye")
   fetch("https://ipapi.co/json/")
     .then(response => {
       if (!response.ok) {
