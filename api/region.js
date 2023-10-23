@@ -10,6 +10,7 @@ if (page==="region") {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
+      console.log("na")
       return response.json();
     })
     .then(data => {
